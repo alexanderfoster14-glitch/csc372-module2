@@ -26,12 +26,9 @@ Bank Account is a superclass that can be used to setup future account types.
 There should be no BankAccount objects, only CheckingAccount objects, apart from testing.
 
 Extremely large account balances will cause rounding errors
-
 */
 
 package csc372_module1;
-
-import java.util.InputMismatchException;
 
 public class BankAccount {
 	protected String firstName;
@@ -65,17 +62,11 @@ public class BankAccount {
 	}
 	
 	public void setFirstName(String firstName) {
-		try{
-			this.firstName = firstName;
-		}
-		catch(InputMismatchException e) {
-			System.out.println("Error setting First Name");
-		}
+		this.firstName = firstName;
 	}
 	
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
-		
 	}
 	
 	public void setAccountID(int accountID) {

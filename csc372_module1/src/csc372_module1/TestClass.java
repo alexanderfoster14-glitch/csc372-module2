@@ -8,7 +8,6 @@ public class TestClass {
 		CheckingAccount.printTest();
 		System.out.println("");
 		
-		
 		//Testing on a new bank account bankAccount1
 		//This is purely for testing, there should be no BankAccount objects, only CheckingAccount
 		BankAccount bankAccount1 = new BankAccount();	//Initialize a "blank" account
@@ -23,7 +22,6 @@ public class TestClass {
 		bankAccount1.withdrawal(50);					//Withdrawal $50, balance should be $101.00
 		bankAccount1.getAccountSummary();				//Print summary of bank account
 		System.out.println("");
-		
 		
 		//Testing on a new checking account checkingAccount1
 		CheckingAccount checkingAccount1 = new CheckingAccount();	//Initialize a new "blank" Checking Account
@@ -62,11 +60,8 @@ public class TestClass {
 		System.out.println(checkingAccount2.getAccountBalance());
 		checkingAccount2.withdrawal(7199254740990.0);		//This should leave a balance of $2 remaining
 		System.out.println(checkingAccount2.getAccountBalance());
-
-		
-		
-		
-		
+		System.out.println("");
+		checkingAccount2.displayAccount();
 		
 	}
 }

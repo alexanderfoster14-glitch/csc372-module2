@@ -1,5 +1,3 @@
-package csc372_module1;
-
 /*
 Part 2: Implement a CheckingAccount class that inherits from the BankAccount class, that: 
 	Has an interest rate attribute
@@ -10,6 +8,8 @@ Methods:
 		denotes that a fee has been assessed
 	displayAccount() - should display all superclass attributes and provide an additional interest rate
 */
+
+package csc372_module1;
 
 public class CheckingAccount extends BankAccount {
 	private double interestRate;
@@ -54,6 +54,4 @@ public class CheckingAccount extends BankAccount {
 		System.out.printf("%.3f", interestRate*100);
 		System.out.println("%");
 	}
-	
-	
 }
