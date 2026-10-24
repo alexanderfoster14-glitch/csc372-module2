@@ -1,0 +1,113 @@
+Creating a GUI Bank Balance Application
+
+Create a simple Graphical User Interface (GUI) Bank Balance application.
+	The application must obtain the BankAccount balance from a user, and then
+		display that balance within a JPanel when the user selects a button.
+	The program should allow for the user to deposit and withdraw funds from
+		their account using a simple interface.
+	The remaining balance in the account should be displayed before exiting the program.
+	Ensure that your application includes the following components:
+		JPanel
+		JButton
+		ActionListener
+
+Students must use appropriate version control for all programmatic assignments created.
+	GIT repositories should be established, and screen captures of repositories should
+	be submitted with each assignment.
+ 
+What to submit?
+Your source code in text version (not screenshot).
+Your entire IDE screenshot displaying source code and output.
+Include additional output screenshots displaying different test cases.
+Screenshot of your version control or GIT repository link 
+Attach all these components into a single Microsoft Word document or submit a zip
+	file containing all of these components.
+
+
+Program functionality:
+	Get starting balance from user
+	Select option or Withdrawal or Deposit
+		Display history of changes?
+	Input amount to add or remove from account
+	Update and display current account information/balance
+	Exit button to end account changes
+
+
+Layout
+
+Window:
+	-------------------------------------------------------------
+	|			Bank Balance Application						|
+	|	Instructions: Enter starting account balance using		|
+	|	the number format xxxx.xx								|
+	|								-------------------------	|
+	|	Input starting balance:		|	<staring balance>	|	|
+	|								-------------------------	|
+	|															|
+	|	Instructions: Enter a Withdrawal OR Deposit amount		|
+	|	using the number format xxxx.xx							|
+	|									-----------------		|
+	|	Withdrawal Amount:				|	$0.00		|		|
+	|									-----------------		|
+	|															|
+	|									-----------------		|
+	|	Deposit Amount:					|	$0.00		|		|
+	|									-----------------		|
+	|															|
+	|	Instructions: Select button "Update Account" to			|
+	|	make Withdrawal or Deposit amount						|
+	|			-----------------------------					|
+	|			|	Update Account Button	|					|
+	|			-----------------------------					|
+	|															|
+	|									-----------------		|
+	|	Current balance:				|				|		|
+	|									-----------------		|
+	|															|
+	|	Account History:										|
+	|	(Scrolling history)										|
+	|	---------------------------------------------			|
+	|	|	Starting Balance: 			$x,xxx.xx	|			|
+	|	|	Withdrawal/Deposit amount:	$x,xxx.xx	|			|
+	|	|	Updated Balance:			$x,xxx.xx	|			|
+	|	|	Withdrawal/Deposit amount:	$x,xxx.xx	|			|
+	|	|	Updated Balance:			$x,xxx.xx	|			|
+	|	---------------------------------------------			|
+	|															|
+	|			---------------------------------				|
+	|			|	Exit Application Button		|				|
+	|			---------------------------------				|
+	-------------------------------------------------------------
+
+main {
+	JFrame
+	JPanel
+	JText <startingBalance>
+	JButton <update account>
+	JButton <exit>
+	JText box <current account balance>
+	JText box <changes from starting balance>
+	JScroll for balance history
+	
+	Variables
+		startingBalance (double)
+		changeAmount (double)
+		currentBalance	(double)
+		ArrayList (2-dimensions with Withdrawal or Deposit and amount)
+	
+	
+	Methods
+		print/update history list
+		Withdrawal
+			add changeAmount to currentBalance
+			update ArrayList with history of change
+		Deposit
+			subtract changeAmount from currentBalance
+			update ArrayList with history of change
+		Add balance change history to ArrayList
+	
+	
+	
+}
+
+
