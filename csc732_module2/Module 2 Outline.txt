@@ -35,49 +35,39 @@ Program functionality:
 
 Layout
 
-Window:
-	-------------------------------------------------------------
-	|			Bank Balance Application						|
-	|	Instructions: Enter starting account balance using		|
-	|	the number format xxxx.xx								|
-	|								-------------------------	|
-	|	Input starting balance:		|	<staring balance>	|	|
-	|								-------------------------	|
-	|															|
-	|	Instructions: Enter a Withdrawal OR Deposit amount		|
-	|	using the number format xxxx.xx							|
-	|									-----------------		|
-	|	Withdrawal Amount:				|	$0.00		|		|
-	|									-----------------		|
-	|															|
-	|									-----------------		|
-	|	Deposit Amount:					|	$0.00		|		|
-	|									-----------------		|
-	|															|
-	|	Instructions: Select button "Update Account" to			|
-	|	make Withdrawal or Deposit amount						|
-	|			-----------------------------					|
-	|			|	Update Account Button	|					|
-	|			-----------------------------					|
-	|															|
-	|									-----------------		|
-	|	Current balance:				|				|		|
-	|									-----------------		|
-	|															|
-	|	Account History:										|
-	|	(Scrolling history)										|
-	|	---------------------------------------------			|
-	|	|	Starting Balance: 			$x,xxx.xx	|			|
-	|	|	Withdrawal/Deposit amount:	$x,xxx.xx	|			|
-	|	|	Updated Balance:			$x,xxx.xx	|			|
-	|	|	Withdrawal/Deposit amount:	$x,xxx.xx	|			|
-	|	|	Updated Balance:			$x,xxx.xx	|			|
-	|	---------------------------------------------			|
-	|															|
-	|			---------------------------------				|
-	|			|	Exit Application Button		|				|
-	|			---------------------------------				|
-	-------------------------------------------------------------
+Window:																	gridY Position:
+	-------------------------------------------------------------		-----------------
+	|			Bank Balance Application						|		|				|
+	|	Instructions: Enter starting account balance using		|		|	y = 0		|
+	|	the number format xxxx.xx								|		| 				|
+	|								-------------------------	|		|---------------|
+	|	Input starting balance:		|	<staring balance>	|	|		|	y = 1		|
+	|								-------------------------	|		|				|
+	|															|		-----------------
+	|	Instructions: Enter a Withdrawal OR Deposit amount		|		|	y = 2		|
+	|	using the number format xxxx.xx							|		|				|
+	|									-----------------		|		|---------------|
+	|	Withdrawal Amount:				|	$0.00		|		|		|	y = 3		|
+	|									-----------------		|		|				|
+	|															|		|---------------|
+	|									-----------------		|		|				|
+	|	Deposit Amount:					|	$0.00		|		|		|	y = 4		|
+	|									-----------------		|		|				|
+	|															|		-----------------
+	|	Instructions: Select button "Update Account" to			|		|	y = 5		|
+	|	make Withdrawal or Deposit amount						|		|---------------|
+	|			-----------------------------					|		|				|
+	|			|	Update Account Button	|					|		|	y = 6		|
+	|			-----------------------------					|		|				|
+	|															|		-----------------
+	|									-----------------		|		|				|
+	|	Current balance:				|				|		|		|	y = 7		|
+	|									-----------------		|		|				|
+	|															|		-----------------
+	|			---------------------------------				|		|				|
+	|			|	Exit Application Button		|				|		|	y = 8		|
+	|			---------------------------------				|		|				|
+	-------------------------------------------------------------		-----------------
 
 main {
 	JFrame
@@ -104,9 +94,12 @@ main {
 		Deposit
 			subtract changeAmount from currentBalance
 			update ArrayList with history of change
-		Add balance change history to ArrayList
+		Add balance change history to ArrayList??
 	
-	
+	Event handlers
+		Exit button
+		"Enter" for current balance
+		Update account balance	
 	
 }
 
